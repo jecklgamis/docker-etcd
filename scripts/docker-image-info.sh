@@ -1,0 +1,4 @@
+DOCKER_REGISTRY=docker.io
+APP_NAME=etcd
+IMAGE_NAME=jecklgamis/${APP_NAME}
+IMAGE_TAG=${VERSION}
