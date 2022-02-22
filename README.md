@@ -1,6 +1,6 @@
 ## docker-etcd
 
-[![Build](https://github.com/jecklgamis/etcd/actions/workflows/build.yml/badge.svg)](https://github.com/jecklgamis/etcd/actions/workflows/build.yml)
+[![Build](https://github.com/jecklgamis/docker-etcd/actions/workflows/build.yml/badge.svg)](https://github.com/jecklgamis/docker-etcd/actions/workflows/build.yml)
 
 This is a single node etcd cluster running inside Docker.
 
