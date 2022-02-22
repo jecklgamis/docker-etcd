@@ -1,6 +1,5 @@
 IMAGE_NAME:=jecklgamis/etcd
 IMAGE_TAG:=latest
-HOST_IP="172.16.0.50"
 default:
 	@cat ./Makefile
 image:
