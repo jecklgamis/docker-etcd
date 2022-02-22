@@ -27,7 +27,7 @@ etcdctl --cacert ca.pem --endpoints=https://localhost:2379  get some-key
 
 The dummy certificates and keys in this repo were generated using `cfssl`.
 See [this repo](https://github.com/coreos/docs/blob/master/os/generate-self-signed-certificates.md)
-for details. 
+for details.
 
 * ca.pem - the CA certificate used to certify the server key pair below
 * server-key.pem - the server private key
