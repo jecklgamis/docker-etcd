@@ -6,7 +6,8 @@ image:
 	@docker build -t $(IMAGE_NAME):$(IMAGE_TAG) -t $(IMAGE_NAME):latest .
 run:
 	docker run --rm  -p 2379:2379  -it $(IMAGE_NAME):$(IMAGE_TAG)
-run-bash:
+run-shell:
 	@docker run -i -t $(IMAGE_NAME):$(IMAGE_TAG) /bin/bash
-login:
+exec-shell:
 	@docker exec -it `docker ps | grep $(IMAGE_NAME) | awk '{print $$1}'` /bin/bash
+all: image
