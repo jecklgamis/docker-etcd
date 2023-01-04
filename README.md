@@ -12,7 +12,7 @@ This is a single node etcd cluster running inside Docker.
 Running without TLS:
 
 ```bash
-docker run -p 2379:2379  -it jecklgamis/etcd:latest
+docker run -p 2379:2379  -it jecklgamis/etcd:main
 etcdctl put some-key some-value
 etcdctl get some-key
 ```
@@ -20,7 +20,7 @@ etcdctl get some-key
 Running with TLS:
 
 ```bash
-docker run -e "ENABLE_TLS=true" -p 2379:2379 -it jecklgamis/etcd:latest
+docker run -e "ENABLE_TLS=true" -p 2379:2379 -it jecklgamis/etcd:main
 etcdctl --cacert ca.pem --endpoints=https://localhost:2379  put some-key some-value
 etcdctl --cacert ca.pem --endpoints=https://localhost:2379  get some-key
 ```
