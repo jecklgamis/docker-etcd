@@ -11,3 +11,4 @@ run-shell:
 exec-shell:
 	@docker exec -it `docker ps | grep $(IMAGE_NAME) | awk '{print $$1}'` /bin/bash
 all: image
+up: image run
