@@ -1,9 +1,9 @@
-FROM ubuntu:22.04
-MAINTAINER Jerrico Gamis <jecklgamis@gmail.com>
+FROM ubuntu:24.04
+LABEL maintainer="Jerrico Gamis <jecklgamis@gmail.com>"
 
 RUN apt update -y && apt install -y curl dumb-init && rm -rf /var/lib/apt/lists/*
 
-ENV ETCD_VERSION=v3.5.8
+ENV ETCD_VERSION=v3.5.27
 ENV GOOGLE_URL=https://storage.googleapis.com/etcd
 ENV GITHUB_URL=https://github.com/etcd-io/etcd/releases/download
 ENV DOWNLOAD_URL=${GOOGLE_URL}
