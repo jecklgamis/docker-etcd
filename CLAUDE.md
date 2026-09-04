@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Single-node etcd cluster running inside Docker. Based on Ubuntu 22.04 with etcd v3.5.8. Supports running with or without TLS (controlled by `ENABLE_TLS` env var).
+Single-node etcd cluster running inside Docker. Based on Ubuntu 24.04 with etcd v3.5.33. Supports running with or without TLS (controlled by `ENABLE_TLS` env var).
 
 ## Build and Run Commands
 
